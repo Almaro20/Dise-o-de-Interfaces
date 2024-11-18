@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor de productos */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+/* Estilos para el pie de página y redes sociales */
+.social-footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.social-footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+}
+.titulo {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.eslogan {
+    text-align: center;
+    font-size: 1.2rem; /* Tamaño del eslogan */
+    color: #666; /* Color del texto del eslogan */
+    margin-bottom: 40px; /* Espacio inferior */
+    margin-top: 30px;
+
+}
+.logo {
+    width: 150px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 15px; 
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
