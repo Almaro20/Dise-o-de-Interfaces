@@ -53,6 +53,17 @@ body {
     font-weight: 500;
     transition: color 0.3s;
 }
+/* Animación de texto */
+.animate-text {
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
 
 .nav-links a:hover {
     color: #8e44ad;
