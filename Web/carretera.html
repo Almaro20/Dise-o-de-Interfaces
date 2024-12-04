@@ -3,67 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicicletas</title>
-    <link rel="stylesheet" href="carretera.css">
+    <title>Bicicletas de Carretera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/carretera.css">
 </head>
 <body>
-    <a href="index.html">
-        <img src="./Imagenes/logo.png" alt="Logo de la tienda" class="logo">
-    </a>
+    <!-- Logo y Navegación -->
+    <header class="text-center my-4">
+        <a href="index.html">
+            <img src="./Imagenes/logo.png" alt="Logo de la tienda" class="logo img-fluid">
+        </a>
+    </header>
 
-    <h1 class="titulo">Bicicletas de Carretera</h1>
-    <p class="eslogan">"Encuentra tu ruta perfecta con nuestras bicicletas"</p>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="./Imagenes/giant.png" alt="Bicicleta 1">
-            <h2>Giant TCR Advanced SL 0 Red 2022</h2>
-            <p>La bicicleta que ha inspirado la revolución en las carreras...</p>
-            <span class="price">6.899,40 €</span>
-        </div>
-        <div class="product-card">
-            <img src="./Imagenes/orbea.png" alt="Bicicleta 2">
-            <h2>Bicicleta orbea Orca M31Etld 2023</h2>
-            <p>Bicicleta de carbono Orca M31 Etld, con transmisión inalámbrica...</p>
-            <span class="price">3.969,55 €</span>
-        </div>
-        <div class="product-card">
-            <img src="./Imagenes/orbea2.png" alt="Bicicleta 3">
-            <h2>Bicicleta orbea Orca Aero M31Etld Pwr 2023</h2>
-            <p>La bicicleta Orca Aero diseñada para carretera, está pensada...</p>
-            <span class="price">4.399,00 €</span>
-        </div>
-    </div>
+    <section class="text-center">
+        <h1 class="titulo">Bicicletas de Carretera</h1>
+        <p class="eslogan">"Encuentra tu ruta perfecta con nuestras bicicletas"</p>
+    </section>
 
-    <div class="product-container">
-        <div class="product-card">
-            <img src="./Imagenes/giant.png" alt="Bicicleta 1">
-            <h2>Giant TCR Advanced SL 0 Red 2022</h2>
-            <p>La bicicleta que ha inspirado la revolución en las carreras...</p>
-            <span class="price">6.899,40 €</span>
-        </div>
-        <div class="product-card">
-            <img src="./Imagenes/orbea.png" alt="Bicicleta 2">
-            <h2>Bicicleta orbea Orca M31Etld 2023</h2>
-            <p>Bicicleta de carbono Orca M31 Etld, con transmisión inalámbrica...</p>
-            <span class="price">3.969,55 €</span>
-        </div>
-        <div class="product-card">
-            <img src="./Imagenes/orbea2.png" alt="Bicicleta 3">
-            <h2>Bicicleta orbea Orca Aero M31Etld Pwr 2023</h2>
-            <p>La bicicleta Orca Aero diseñada para carretera, está pensada...</p>
-            <span class="price">4.399,00 €</span>
-        </div>
-    </div>
+    <!-- Contenedor de Productos -->
+    <section class="container">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal1">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/giant.png" alt="Bicicleta 1" class="img-fluid">
+                    <h2>Giant TCR Advanced SL 0 Red 2022</h2>
+                    <p>La bicicleta que ha inspirado la revolución en las carreras...</p>
+                    <span class="precio">6.899,40 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas1">Ver características</button>
+                    <div id="caracteristicas1" class="collapse">
+                        <ul>
+                            <li>Marco de carbono</li>
+                            <li>Transmisión electrónica Red eTap</li>
+                            <li>Ruedas de carbono</li>
+                            <li>Peso: 6.8 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal2">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/orbea.png" alt="Bicicleta 2" class="img-fluid">
+                    <h2>Bicicleta Orbea Orca M31Etld 2023</h2>
+                    <p>Bicicleta de carbono Orca M31 Etld, con transmisión inalámbrica...</p>
+                    <span class="precio">3.969,55 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas2">Ver características</button>
+                    <div id="caracteristicas2" class="collapse">
+                        <ul>
+                            <li>Marco de carbono</li>
+                            <li>Transmisión inalámbrica SRAM Force eTap AXS</li>
+                            <li>Ruedas de carbono</li>
+                            <li>Peso: 7.2 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal3">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/orbea2.png" alt="Bicicleta 3" class="img-fluid">
+                    <h2>Bicicleta Orbea Orca Aero M31Etld Pwr 2023</h2>
+                    <p>La bicicleta Orca Aero diseñada para carretera, está pensada...</p>
+                    <span class="precio">4.399,00 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas3">Ver características</button>
+                    <div id="caracteristicas3" class="collapse">
+                        <ul>
+                            <li>Marco de carbono Aero</li>
+                            <li>Transmisión SRAM Rival eTap</li>
+                            <li>Ruedas aero de carbono</li>
+                            <li>Peso: 7.1 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 (repetido) -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal1">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/giant.png" alt="Bicicleta 1" class="img-fluid">
+                    <h2>Giant TCR Advanced SL 0 Red 2022</h2>
+                    <p>La bicicleta que ha inspirado la revolución en las carreras...</p>
+                    <span class="precio">6.899,40 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas1">Ver características</button>
+                    <div id="caracteristicas1" class="collapse">
+                        <ul>
+                            <li>Marco de carbono</li>
+                            <li>Transmisión electrónica Red eTap</li>
+                            <li>Ruedas de carbono</li>
+                            <li>Peso: 6.8 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 (repetido) -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal2">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/orbea.png" alt="Bicicleta 2" class="img-fluid">
+                    <h2>Bicicleta Orbea Orca M31Etld 2023</h2>
+                    <p>Bicicleta de carbono Orca M31 Etld, con transmisión inalámbrica...</p>
+                    <span class="precio">3.969,55 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas2">Ver características</button>
+                    <div id="caracteristicas2" class="collapse">
+                        <ul>
+                            <li>Marco de carbono</li>
+                            <li>Transmisión inalámbrica SRAM Force eTap AXS</li>
+                            <li>Ruedas de carbono</li>
+                            <li>Peso: 7.2 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 (repetido) -->
+            <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#productoModal3">
+                <div class="tarjeta-producto">
+                    <img src="./Imagenes/orbea2.png" alt="Bicicleta 3" class="img-fluid">
+                    <h2>Bicicleta Orbea Orca Aero M31Etld Pwr 2023</h2>
+                    <p>La bicicleta Orca Aero diseñada para carretera, está pensada...</p>
+                    <span class="precio">4.399,00 €</span>
+                    <button class="btn btn-info mt-2" data-bs-toggle="collapse" href="#caracteristicas3">Ver características</button>
+                    <div id="caracteristicas3" class="collapse">
+                        <ul>
+                            <li>Marco de carbono Aero</li>
+                            <li>Transmisión SRAM Rival eTap</li>
+                            <li>Ruedas aero de carbono</li>
+                            <li>Peso: 7.1 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="store-info">
+                <h3>Ciclismo El Peloton</h3>
+                <p>Venta de bicicletas y accesorios</p>
+                <address>
+                    <p>Calle Ficticia 123</p>
+                    <p>Ciudad, País</p>
+                </address>
+            </div>
     
-    <div class="social-footer">
-        <p>Síguenos en nuestras redes sociales:</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/?locale=es_ES"><img src="./Imagenes/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="./Imagenes/ig.png" alt="Instagram"></a>
-            <a href="https://x.com/?lang=es&mx=2"><img src="./Imagenes/x.png" alt="Twitter"></a>
-        </div>
-    </div>
+            <div class="business-hours">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lunes - Viernes: 9:00 AM - 6:00 PM</li>
+                    <li>Sábado: 10:00 AM - 2:00 PM</li>
+                    <li>Domingo: Cerrado</li>
+                </ul>
+            </div>
+    
+           
+    </footer>
+    
+
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
