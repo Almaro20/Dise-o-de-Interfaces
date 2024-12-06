@@ -1,176 +1,168 @@
-// Variables de color
 $color-principal: #2ecc71;
 $color-secundario: #333;
 $color-fondo: #f9f9f9;
 $color-hover: #1abc9c;
-$color-fondo-footer: #2a2a72;  // Fondo del footer
-$color-texto-footer: #530909;  // Color de texto en el footer
+$color-fondo-footer: #2a2a72;
+$color-texto-footer: #530909;
 
-// Estilos generales
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: $color-fondo;
+ background-color: $color-fondo;
 }
 
-// Logo
 .logo {
-    width: 150px;
-    height: auto;
-    margin-right: 15px;
+ width: 150px;
+ height: auto;
+ margin-right: 15px;
 }
 
-// Títulos
 .titulo {
-    font-size: 2.5rem;
-    color: $color-secundario;
-    margin-top: 30px;
+ font-size: 2.5rem;
+ color: $color-secundario;
+ margin-top: 30px;
 }
 
 .eslogan {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 40px;
+ font-size: 1.2rem;
+ color: #666;
+ margin-bottom: 40px;
 }
 
-// Tarjetas de producto
 .tarjeta-producto {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ padding: 20px;
+ transition: transform 0.3s ease;
+ cursor: pointer;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+ &:hover {
+  transform: scale(1.05);
+ }
 }
 
 .tarjeta-producto img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+ max-width: 100%;
+ border-radius: 10px;
+ margin-bottom: 15px;
 }
 
 .tarjeta-producto h2 {
-    font-size: 18px;
-    color: $color-secundario;
-    margin-bottom: 10px;
+ font-size: 18px;
+ color: $color-secundario;
+ margin-bottom: 10px;
 }
 
 .tarjeta-producto p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
+ font-size: 14px;
+ color: #666;
+ margin-bottom: 15px;
 }
 
 .tarjeta-producto .precio {
-    font-size: 18px;
-    font-weight: bold;
-    color: $color-principal;
+ font-size: 18px;
+ font-weight: bold;
+ color: $color-principal;
 }
 
-// Modal para características
 .modal-content {
-    padding: 20px;
+ padding: 20px;
 }
 
 .modal-body ul {
-    list-style-type: none;
-    padding-left: 0;
+ list-style-type: none;
+ padding-left: 0;
 }
 
 .modal-body li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+ font-size: 1rem;
+ color: #555;
+ margin-bottom: 10px;
 }
 
-/* Estilos para el Footer */
 .footer {
-    background-color: $color-fondo-footer;
-    color: $color-texto-footer;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 60px; // Espacio antes del footer
+ background-color: $color-fondo-footer;
+ color: $color-texto-footer;
+ padding: 40px 20px;
+ text-align: center;
+ margin-top: 60px;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 30px;
+ max-width: 1200px;
+ margin: 0 auto;
 }
 
 .store-info, .business-hours, .social-footer {
-    flex: 1 1 30%;
-    min-width: 250px;
-    margin-bottom: 20px;
+ flex: 1 1 30%;
+ min-width: 250px;
+ margin-bottom: 20px;
 }
 
 .store-info h3, .business-hours h4 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+ font-size: 1.8rem;
+ margin-bottom: 10px;
 }
 
 .store-info p, .business-hours li {
-    font-size: 1.1rem;
-    color: $color-texto-footer;
-    margin-bottom: 10px;
+ font-size: 1.1rem;
+ color: $color-texto-footer;
+ margin-bottom: 10px;
 }
 
 .store-info address p {
-    font-size: 1rem;
-    color: $color-texto-footer;
+ font-size: 1rem;
+ color: $color-texto-footer;
 }
 
 .business-hours ul {
-    list-style: none;
-    padding: 0;
-    color: $color-texto-footer;
+ list-style: none;
+ padding: 0;
+ color: $color-texto-footer;
 }
 
 .business-hours li {
-    font-size: 1rem;
-    margin-bottom: 5px;
+ font-size: 1rem;
+ margin-bottom: 5px;
 }
 
 .social-footer p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+ font-size: 1.1rem;
+ margin-bottom: 15px;
 }
 
 .social-icons a {
-    margin: 0 8px;
-    display: inline-block;
+ margin: 0 8px;
+ display: inline-block;
 }
 
 .social-icons img {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s;
+ width: 20px;
+ height: 20px;
+ transition: transform 0.3s;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1);
+ transform: scale(1.1);
 }
 
-/* Aseguramos que en pantallas pequeñas el contenido se acomode */
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .store-info, .business-hours, .social-footer {
-        text-align: center;
-    }
+ .footer-content {
+  flex-direction: column;
+  align-items: center;
+ }
+ .store-info, .business-hours, .social-footer {
+  text-align: center;
+ }
 }

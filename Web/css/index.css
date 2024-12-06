@@ -109,4 +109,39 @@ h2 {
   color: #8e44ad;
 }
 
+/* Efecto especial para el título */
+.title-special {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite, moveText 3s ease-in-out infinite;
+}
+
+/* Efecto de resplandor */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #8e44ad, 0 0 10px #8e44ad, 0 0 15px #8e44ad, 0 0 20px #2c3e50, 0 0 30px #2c3e50;
+  }
+  50% {
+    text-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad, 0 0 40px #2c3e50, 0 0 50px #2c3e50;
+  }
+  100% {
+    text-shadow: 0 0 5px #8e44ad, 0 0 10px #8e44ad, 0 0 15px #8e44ad, 0 0 20px #2c3e50, 0 0 30px #2c3e50;
+  }
+}
+/* Movimiento del texto */
+@keyframes moveText {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

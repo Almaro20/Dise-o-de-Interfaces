@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ropa Unisex</title>
-    <link rel="stylesheet" href="ropa.css">
+    <link rel="stylesheet" href="css/ropa.css">
 </head>
 <body>
-    <a href="index.html">
-        <img src="./Imagenes/logo.png" alt="Logo de la tienda" class="logo">
-    </a>
-    <div class="contenedor">
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="./Imagenes/logo.png" alt="Logo de la tienda" class="logo">
+        </a>
+    </header>
+
+    <main class="contenedor">
         <h1>Ropa Unisex</h1>
         <p class="subtitulo">"Viste para la velocidad, pedalea con estilo"</p>
 
-        <div class="seccion-ropa">
+        <section class="seccion-ropa">
             <div class="articulo">
                 <img src="./Imagenes/ropa1.png" alt="Maillot cube TeamLine LS W">
                 <p>Maillot cube TeamLine LS W</p>
@@ -30,9 +33,9 @@
                 <p>Maillot kimoa Lab Cream Special Edition</p>
                 <p class="precio">€89.99</p>
             </div>
-        </div>
+        </section>
 
-        <div class="seccion-ropa">
+        <section class="seccion-ropa">
             <div class="articulo">
                 <img src="./Imagenes/ropa4.png" alt="Culotte northwave Force 2 Mt Sin Badana">
                 <p>Culotte northwave Force 2 Mt Sin Badana</p>
@@ -48,9 +51,9 @@
                 <p>Culotte orbea M Core</p>
                 <p class="precio">€69.99</p>
             </div>
-        </div>
+        </section>
 
-        <div class="seccion-ropa">
+        <section class="seccion-ropa">
             <div class="articulo">
                 <img src="./Imagenes/ropa7.png" alt="Culotte kimoa Lab Cream Special Edition">
                 <p>Culotte kimoa Lab Cream Special Edition</p>
@@ -66,17 +69,26 @@
                 <p>Maillot etxeondo batura</p>
                 <p class="precio">€95.99</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Redes sociales centradas -->
-        <div class="iconos-sociales">
+        <section class="iconos-sociales">
             <p>Síguenos en nuestras redes sociales:</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/?locale=es_ES"><img src="./Imagenes/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img src="./Imagenes/ig.png" alt="Instagram"></a>
-                <a href="https://x.com/?lang=es&mx=2"><img src="./Imagenes/x.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/?locale=es_ES">
+                    <img src="./Imagenes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./Imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/?lang=es&mx=2">
+                    <img src="./Imagenes/x.png" alt="Twitter">
+                </a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2024 Ciclismo El Peloton. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

@@ -7,7 +7,6 @@ $light-color: white;
 $border-radius: 5px;
 $btn-padding: 12px;
 
-// Estilos globales
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,6 @@ body {
   color: #333;
 }
 
-// Estilo de contenedor principal
 .container {
   display: flex;
   flex-direction: column;
