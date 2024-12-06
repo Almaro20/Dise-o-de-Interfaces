@@ -1,0 +1,196 @@
+// Variables
+$color-principal: #2ecc71;
+$color-secundario: #333;
+$color-fondo: #f9f9f9;
+$color-hover: #1abc9c;
+$color-footer: #2a2a72;
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: $color-fondo;
+}
+
+// Logo
+.logo {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+// Títulos
+.titulo {
+    font-size: 2.5rem;
+    color: $color-secundario;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.eslogan {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+// Contenedor de productos
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+// Tarjetas de productos
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    color: $color-secundario;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-principal;
+}
+
+.product-card .btn-characteristics {
+    background-color: $color-principal;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.product-card .product-details {
+    display: none;
+    margin-top: 15px;
+}
+
+.product-card .product-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-card .product-details li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+// Footer
+.footer {
+    background-color: $color-footer;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.store-info, .business-hours, .social-footer {
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+.store-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.store-info p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.business-hours h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.business-hours ul {
+    list-style: none;
+    padding: 0;
+    color: #ddd;
+}
+
+.business-hours li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.social-footer p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store-info, .business-hours, .social-footer {
+        text-align: center;
+    }
+}
