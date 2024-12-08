@@ -1,0 +1,180 @@
+// Variables de color
+$color-principal: #3498db; 
+$color-secundario: #e74c3c; 
+$color-texto: #2c3e50; 
+$color-blanco: #fff;
+$color-gris-claro: #ecf0f1; 
+$color-fondo: #f4f7f6; 
+$color-footer: #34495e; 
+$color-hover: lighten($color-principal, 15%); 
+$color-btn-hover: darken($color-secundario, 10%);
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: $color-fondo;
+    color: $color-texto;
+    line-height: 1.6;
+}
+
+header {
+    background-color: $color-principal;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color: $color-texto;
+}
+
+h1 {
+    text-align: center;
+    color: $color-principal;
+    font-size: 3rem; 
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    text-align: center;
+    font-style: italic;
+    color: $color-gris-claro;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.seccion-ropa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.articulo {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: $color-blanco;
+    padding: 15px;
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.articulo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    background-color: lighten($color-principal, 10%); 
+}
+
+.articulo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.articulo p {
+    font-size: 1.3rem;
+    color: $color-texto;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.precio {
+    font-weight: bold;
+    background-color: $color-secundario;
+    color: $color-blanco;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iconos-sociales {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.iconos-sociales p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: $color-texto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; // Más espacio entre iconos
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); // Sombra sutil
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); // Sombra más profunda al hacer hover
+}
+
+.pie {
+    background-color: $color-footer;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: $color-blanco;
+    font-size: 1.2rem;
+    border-top: 5px solid $color-principal; 
+}
+
+button {
+    background-color: $color-principal;
+    color: $color-blanco;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: $color-hover;
+    transform: scale(1.05); 
+}
