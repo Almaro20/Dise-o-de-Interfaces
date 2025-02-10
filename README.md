@@ -1,5 +1,70 @@
-Ciclismo El Pelotón 🚴‍♂️🚴‍♀️ Bienvenido al repositorio de Ciclismo El Pelotón, una tienda online dedicada al mundo del ciclismo. Aquí puedes encontrar una variedad de productos, desde bicicletas de carretera y montaña, hasta ropa y accesorios especializados. Nuestro objetivo es ofrecerte una experiencia de compra única, con productos de alta calidad y un servicio al cliente excepcional.
+# Getting Started with Create React App
 
-📌 Descripción Ciclismo El Pelotón es una tienda online pensada para ciclistas de todos los niveles. Ya seas un amante del ciclismo de carretera o un aventurero de las montañas, tenemos lo que necesitas. Además de nuestras bicicletas y accesorios, ofrecemos asesoramiento experto para ayudarte a elegir lo mejor para ti.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-🔧 Tecnologías utilizadas HTML5: Estructura del sitio web. CSS3 (SASS): Estilos y diseño responsivo. JavaScript: Funcionalidades interactivas. Bootstrap 5: Framework para diseño responsivo. Font Awesome: Iconos y elementos visuales. 🌐 Funcionalidades Catálogo de productos: Navega por nuestras categorías, como bicicletas de carretera, MTB, ropa y accesorios. Página de inicio: Una página principal con un diseño atractivo que te da la bienvenida y te dirige a las secciones principales. Sección "Quiénes somos": Conoce nuestra historia y lo que nos apasiona. Tienda física y ubicación: Información sobre nuestra tienda física y cómo llegar. Música ambiental: Disfruta de música suave mientras navegas por el sitio. Videos informativos: Aprende más sobre ciclismo a través de nuestro contenido multimedia.
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
